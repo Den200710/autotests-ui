@@ -1,21 +1,18 @@
-from playwright.sync_api import sync_playwright, expect
+from playwright.sync_api import expect, Page
 
-def test_wrong_email_or_password_authorization():
-    with sync_playwright() as playwright:
-        browser = playwright.chromium.launch(headless=False)
-        page = browser.new_page()
+def test_wrong_email_or_password_authorization(chromium_page: Page):
 
-        page.goto("https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/auth/login")
+    chromium_page.goto("https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/auth/login")
 
-        email_input = page.locator('//div[@data-testid="login-form-email-input"]//div//input')
-        email_input.fill('qwe@gmail.com')
+    email_input = chromium_page.locator('//div[@data-testid="login-form-email-input"]//div//input')
+    email_input.fill('qwe@gmail.com')
 
-        password_input = page.get_by_test_id('login-form-password-input').locator('input')
-        password_input.fill('qwe@gmail.com')
+    password_input = chromium_page.get_by_test_id('login-form-password-input').locator('input')
+    password_input.fill('qwe@gmail.com')
 
-        login_button = page.get_by_test_id('login-page-login-button')
-        login_button.click()
+    login_button = chromium_page.get_by_test_id('login-page-login-button')
+    login_button.click()
 
-        wrong_email_or_password_alert = page.locator('//div[@data-testid="login-page-wrong-email-or-password-alert"]')
-        expect(wrong_email_or_password_alert).to_be_visible()
-        expect(wrong_email_or_password_alert).to_have_text('Wrong email or password')
+    wrong_email_or_password_alert = chromium_page.locator('//div[@data-testid="login-page-wrong-email-or-password-alert"]')
+    expect(wrong_email_or_password_alert).to_be_visible()
+    expect(wrong_email_or_password_alert).to_have_text('Wrong email or password')
