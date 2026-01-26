@@ -29,6 +29,4 @@ class CourseViewComponent(BaseComponent):
         expect(self.min_score_text.nth(index)).to_have_text(f"Min score: {min_score}")
 
         expect(self.estimated_time_text.nth(index)).to_be_visible()
-        expect(self.estimated_time_text.nth(index)).to_have_text(
-            f"Estimated time: {estimated_time}"
-        )
+        expect(self.estimated_time_text.nth(index)).to_have_text(f"Estimated time: {estimated_time}")
