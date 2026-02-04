@@ -7,6 +7,8 @@ from elements.link import Link
 from elements.text import Text
 from pages.base_page import BasePage
 from components.authentication.login_form_component import LoginFormComponent
+
+
 class LoginPage(BasePage):
 
     def __init__(self, page: Page):
