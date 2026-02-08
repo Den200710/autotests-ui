@@ -4,8 +4,8 @@ from playwright.sync_api import Page
 from pages.courses.courses_list_page import CoursesListPage
 from pages.courses.create_course_page import CreateCoursePage
 from pages.dashboard.dashboard_page import DashboardPage
-from pages.authentification.login_page import LoginPage
-from pages.authentification.registration_page import RegistrationPage
+from pages.authentication.login_page import LoginPage
+from pages.authentication.registration_page import RegistrationPage
 
 
 @pytest.fixture()
