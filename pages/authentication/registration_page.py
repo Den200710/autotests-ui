@@ -6,6 +6,8 @@ from elements.button import Button
 from elements.link import Link
 from pages.base_page import BasePage
 from components.authentication.registration_form_component import RegistrationFormComponent
+
+
 class RegistrationPage(BasePage):
 
     def __init__(self, page: Page):

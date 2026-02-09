@@ -2,12 +2,14 @@ import allure
 import pytest
 from allure_commons.types import Severity
 
+from config import settings
 from pages.courses.create_course_page import CreateCoursePage
 from pages.courses.courses_list_page import CoursesListPage
 from tools.allure.tags import AllureTag
 from tools.allure.epics import AllureEpic
 from tools.allure.features import AllureFeatures
 from tools.allure.stories import AllureStory
+from tools.routes import AppRoute
 
 
 @pytest.mark.courses
@@ -20,9 +22,9 @@ class TestCourses:
     @allure.title('Check displaying of empy courses list')
     @allure.severity(Severity.NORMAL)
     def test_empty_courses_list(self, courses_list_page: CoursesListPage):
-        courses_list_page.visit("https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/courses")
+        courses_list_page.visit(AppRoute.COURSES)
 
-        courses_list_page.navbar.check_visible("username")
+        courses_list_page.navbar.check_visible(settings.test_user.username)
         courses_list_page.sidebar.check_visible()
 
         courses_list_page.toolbar_view.check_visible()
@@ -35,8 +37,7 @@ class TestCourses:
             create_course_page: CreateCoursePage,
             courses_list_page: CoursesListPage
     ):
-        create_course_page.visit(
-            'https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/courses/create')
+        create_course_page.visit(AppRoute.CREATE_COURSES)
 
         create_course_page.crete_course_toolbar_view_component.check_visible()
         create_course_page.crete_course_toolbar_view_component.check_disabled_create_course_button()
@@ -49,7 +50,7 @@ class TestCourses:
         create_course_page.create_course_toolbar_view_component.check_visible()
         create_course_page.check_visible_exercises_empty_view()
 
-        create_course_page.image_upload_widget.upload_preview_image('./testdata/files/image.png')
+        create_course_page.image_upload_widget.upload_preview_image(settings.test_data.image_png_file)
         create_course_page.image_upload_widget.check_visible(is_image_uploaded=True)
 
         create_course_page.create_course_form_component.fill(title="Playwright",
@@ -73,9 +74,9 @@ class TestCourses:
             courses_list_page: CoursesListPage
     ):
 
-        create_course_page.visit('https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/courses/create')
+        create_course_page.visit(AppRoute.CREATE_COURSES)
 
-        create_course_page.image_upload_widget.upload_preview_image('./testdata/files/image.png')
+        create_course_page.image_upload_widget.upload_preview_image(settings.test_data.image_png_file)
         create_course_page.image_upload_widget.check_visible(is_image_uploaded=True)
         create_course_page.create_course_form_component.fill(title="Playwright",
                                                              estimated_title="2 weeks",
