@@ -1,0 +1,61 @@
+INFO     BASE_PAGE:base_page.py:19 Opening the url AppRoute.DASHBOARD
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator with "data_testid=<class 'playwright.sync_api._generated.Locator'>" at index "0"
+INFO     BASE_ELEMENT:base_element.py:41 Checking that text "App title" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator with "data_testid=<class 'playwright.sync_api._generated.Locator'>" at index "0"
+INFO     BASE_ELEMENT:base_element.py:49 Checking that text "App title" has text "UI Course"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator with "data_testid=<class 'playwright.sync_api._generated.Locator'>" at index "0"
+INFO     BASE_ELEMENT:base_element.py:41 Checking that text "Welcome title" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator with "data_testid=<class 'playwright.sync_api._generated.Locator'>" at index "0"
+INFO     BASE_ELEMENT:base_element.py:49 Checking that text "Welcome title" has text "Welcome, username!"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator with "data_testid=<class 'playwright.sync_api._generated.Locator'>" at index "0"
+INFO     BASE_ELEMENT:base_element.py:41 Checking that icon "Icon" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator with "data_testid=<class 'playwright.sync_api._generated.Locator'>" at index "0"
+INFO     BASE_ELEMENT:base_element.py:41 Checking that text "Title" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator with "data_testid=<class 'playwright.sync_api._generated.Locator'>" at index "0"
+INFO     BASE_ELEMENT:base_element.py:49 Checking that text "Title" has text "Logout"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator with "data_testid=<class 'playwright.sync_api._generated.Locator'>" at index "0"
+INFO     BASE_ELEMENT:base_element.py:41 Checking that button "Button" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator with "data_testid=<class 'playwright.sync_api._generated.Locator'>" at index "0"
+INFO     BASE_ELEMENT:base_element.py:41 Checking that icon "Icon" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator with "data_testid=<class 'playwright.sync_api._generated.Locator'>" at index "0"
+INFO     BASE_ELEMENT:base_element.py:41 Checking that text "Title" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator with "data_testid=<class 'playwright.sync_api._generated.Locator'>" at index "0"
+INFO     BASE_ELEMENT:base_element.py:49 Checking that text "Title" has text "Courses"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator with "data_testid=<class 'playwright.sync_api._generated.Locator'>" at index "0"
+INFO     BASE_ELEMENT:base_element.py:41 Checking that button "Button" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator with "data_testid=<class 'playwright.sync_api._generated.Locator'>" at index "0"
+INFO     BASE_ELEMENT:base_element.py:41 Checking that icon "Icon" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator with "data_testid=<class 'playwright.sync_api._generated.Locator'>" at index "0"
+INFO     BASE_ELEMENT:base_element.py:41 Checking that text "Title" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator with "data_testid=<class 'playwright.sync_api._generated.Locator'>" at index "0"
+INFO     BASE_ELEMENT:base_element.py:49 Checking that text "Title" has text "Dashboard"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator with "data_testid=<class 'playwright.sync_api._generated.Locator'>" at index "0"
+INFO     BASE_ELEMENT:base_element.py:41 Checking that button "Button" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator with "data_testid=<class 'playwright.sync_api._generated.Locator'>" at index "0"
+INFO     BASE_ELEMENT:base_element.py:41 Checking that text "Title" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator with "data_testid=<class 'playwright.sync_api._generated.Locator'>" at index "0"
+INFO     BASE_ELEMENT:base_element.py:49 Checking that text "Title" has text "Dashboard"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator with "data_testid=<class 'playwright.sync_api._generated.Locator'>" at index "0"
+INFO     BASE_ELEMENT:base_element.py:41 Checking that text "Title" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator with "data_testid=<class 'playwright.sync_api._generated.Locator'>" at index "0"
+INFO     BASE_ELEMENT:base_element.py:49 Checking that text "Title" has text "Scores"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator with "data_testid=<class 'playwright.sync_api._generated.Locator'>" at index "0"
+INFO     BASE_ELEMENT:base_element.py:41 Checking that image "Chart" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator with "data_testid=<class 'playwright.sync_api._generated.Locator'>" at index "0"
+INFO     BASE_ELEMENT:base_element.py:41 Checking that text "Title" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator with "data_testid=<class 'playwright.sync_api._generated.Locator'>" at index "0"
+INFO     BASE_ELEMENT:base_element.py:49 Checking that text "Title" has text "Courses"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator with "data_testid=<class 'playwright.sync_api._generated.Locator'>" at index "0"
+INFO     BASE_ELEMENT:base_element.py:41 Checking that image "Chart" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator with "data_testid=<class 'playwright.sync_api._generated.Locator'>" at index "0"
+INFO     BASE_ELEMENT:base_element.py:41 Checking that text "Title" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator with "data_testid=<class 'playwright.sync_api._generated.Locator'>" at index "0"
+INFO     BASE_ELEMENT:base_element.py:49 Checking that text "Title" has text "Students"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator with "data_testid=<class 'playwright.sync_api._generated.Locator'>" at index "0"
+INFO     BASE_ELEMENT:base_element.py:41 Checking that image "Chart" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator with "data_testid=<class 'playwright.sync_api._generated.Locator'>" at index "0"
+INFO     BASE_ELEMENT:base_element.py:41 Checking that text "Title" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator with "data_testid=<class 'playwright.sync_api._generated.Locator'>" at index "0"
+INFO     BASE_ELEMENT:base_element.py:49 Checking that text "Title" has text "Activities"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator with "data_testid=<class 'playwright.sync_api._generated.Locator'>" at index "0"
+INFO     BASE_ELEMENT:base_element.py:41 Checking that image "Chart" is visible
