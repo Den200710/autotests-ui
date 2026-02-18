@@ -47,7 +47,7 @@ jobs:
           path: allure-results/
           retention-days: 1
 
-  publish-report :
+  publish-report:
     runs-on: ubuntu-latest  # Указываем, что тесты будут запускаться на последней версии Ubuntu
     needs: run-tests        # Зависимость от успешного выполнения run-tests
     if: success()
