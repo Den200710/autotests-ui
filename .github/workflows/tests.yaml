@@ -24,7 +24,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4  # Используем GitHub Action для установки Python
         with:
-          python-version: '3.11'  # Устанавливаем версию Python 3.11 (можно заменить на другую версию)
+          python-version: '3.12'  # Устанавливаем версию Python 3.11 (можно заменить на другую версию)
 
       # 3. Шаг для установки всех зависимостей проекта
       - name: Install dependencies
@@ -41,7 +41,7 @@ jobs:
       # 5. Шаг для сохранения результатов Allure results
       - name: Upload Allure results as artifact
         if: always()
-        uses: action/upload-artifact@v4
+        uses: actions/upload-artifact@v4
         with:
           name: allure-results
           path: allure-results/
@@ -54,7 +54,7 @@ jobs:
     steps:
       # 1. Шаг для загрузки артефакта с результатами
       - name: Download Allure results artifact
-        uses: action/download-artifact@v4
+        uses: actions/download-artifact@v4
         with:
           name: allure-results
           path: allure-results
